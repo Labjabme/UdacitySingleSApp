@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/xtrabit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src ="@drawable/xtrabit"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/name_of_business"
+        android:text="Xtrabit - everybit counts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="39sp"
+        android:textColor="#ffde00"/>
+    <TextView
+        android:id="@+id/operating_hours"
+        android:text="Hours: 07:00 - 15:00 "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:layout_above="@id/operating_days"/>
+
+    <TextView
+        android:id="@+id/operating_days"
+        android:text="Operating: Mon -Fri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/address"
+        android:textSize="35sp"/>
+    <TextView
+        android:id="@+id/address"
+        android:text="Address: 368 Madiba Street, Pretoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="35sp"/>
+
+</RelativeLayout>
